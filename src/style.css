@@ -10,77 +10,91 @@
 /* BASE SYLE */
 
 .app {
-    background-color: #f5f5f5;
+    font-family: sans-serif;
     font-size: 14px;
     line-height: 20px;
-    color: white;
-    margin: 0 auto;
-    padding: 0;
+    color: rgb(227, 227, 238);
+}
 
+.app_container {
+    margin-top: 40px;
+    background: #242424;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 /* STYLES */
 
 .navbar {
-    background-color: #333333;
+    background-color: rgb(42, 42, 42);
     position: fixed;
     top: 0;
     width: 100%;
 }
 
 .navbar__list {
-    text-align: center;
-    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar__iten {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.navbar__iten:hover > a {
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
+.navbar__link {
+    padding: 10px 15px;
+    color: rgba(219, 232, 240, 0.8);
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.5s ease;
 }
 
-.navbar__iten > a:focus {
+.navbar__link:hover {
     background-color: #ed5565;
 }
 
-.navbar__iten > a {
-    display: inline-block;
-    padding: 10px 15px;
-    color: #ffffffcc;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+.navbar__link:focus {
+    background-color: #ed5565;
 }
 
-.section-1 {
-    margin: 35px auto;
-    padding: 10px 20px;
-    text-align: center;
-    background: url(./assets/images/programing-blog.jpg);
-    background-size: cover;
-    height: 1000px;
-    width: 100%;
+/* MAIN */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.example-text {
-    border: 2px solid #edab55;
-    border-radius: 14px;
-    background-color: #333333;
-    padding: 10px;
-    margin: 20px auto;
-    max-width: 300px;
-    text-align: center;
-    
-}
 
 .title {
+    margin-top: 25px;
     font-family: sans-serif;
     font-size: 30px;
     font-weight: bold;
     color: #ed5565;
     text-align: center;
+}
+
+.text-box {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #333333;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-example {
+    max-width: 600px;
+    text-align: justify;
+    color: rgba(207, 211, 216, 0.7);
 }
